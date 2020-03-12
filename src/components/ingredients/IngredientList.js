@@ -1,14 +1,14 @@
 import React from 'react'
-import './IngredientList.module.css'
+import './styles/IngredientList.css'
 
-export default function IngredientsList(props) {
+export default function IngredientList(props) {
     return (
         <section className="ingredient-list">
             <h2>Loaded Ingredients</h2>
             <ul>
                 {props.ingredients.map(ig => (
-                    <li key={ig.id} onClick={props.onRemoveItem.bind(this, ig.id)}>
-                        <span>{ig.title}</span>
+                    <li key={ig.id} onClick={props.deleteItem.bind(this, ig.id)}>
+                        <span>{ig.name}</span>
                         <span>{ig.amount}x</span>
                     </li>
                 ))}

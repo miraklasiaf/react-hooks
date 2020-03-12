@@ -1,5 +1,5 @@
 import React from 'react'
-import './LoadingIndicator.module.css'
+import './styles/LoadingIndicator.css'
 
 export default function LoadingIndicator() {
     return (
